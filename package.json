@@ -1,0 +1,15 @@
+{
+  "name": "nx-continuous-no-terminate",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "Thomas Haugland Rudfoss",
+  "license": "ISC",
+  "packageManager": "pnpm@10.4.1",
+  "dependencies": {
+    "nx": "^21.4.1"
+  },
+  "devDependencies": {
+    "nx": "21.4.1"
+  }
+}

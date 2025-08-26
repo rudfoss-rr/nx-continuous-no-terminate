@@ -1,0 +1,23 @@
+{
+	"name": "package",
+	"$schema": "../node_modules/nx/schemas/project-schema.json",
+	"projectType": "application",
+	"sourceRoot": "package/src",
+	"tags": [],
+  "targets": {
+    "cont": {
+      "executor": "nx:run-commands",
+      "continuous": true,
+      "options": {
+        "command": "docker run --rm node node -e \"new Promise((res) => setTimeout(res, 15000))\""
+      }
+    },
+    "run": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["cont"],
+      "options": {
+        "command": "echo started"
+      }
+    }
+  }
+}

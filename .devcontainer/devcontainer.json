@@ -1,0 +1,20 @@
+{
+	"name": "test",
+  "image": "ghcr.io/devcontainers/templates/javascript-node:4.0.2",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"installDockerBuildx": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"installYarnUsingApt": true,
+			"version": "lts",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		}
+	},
+
+	"remoteUser": "vscode",
+	"containerUser": "vscode"
+}
