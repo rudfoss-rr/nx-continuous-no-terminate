@@ -1,6 +1,6 @@
 {
 	"name": "test",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:dev-24-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:dev-24",
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {
 			"moby": true,
